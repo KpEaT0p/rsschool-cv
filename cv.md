@@ -35,3 +35,49 @@ company, so I am striving for new heights.**
 * VirtualBox
 * Linux
 
+---
+
+## Task code
+
+### Convert string to camel case:
+*Complete the method/function so that it converts dash/underscore
+delimited words into camel casing. The first word within the output
+should be capitalized only if the original word was capitalized
+(known as Upper Camel Case, also often referred to as Pascal case).
+The next words should be always capitalized.*
+
+```def to_camel_case(text):
+    text = list(text)
+    new_text = []
+    flag = 0
+    for i in range(len(text)):
+        if text[i] == '_':
+            flag = 1
+            new_text.append(text[i + 1].upper())
+        elif text[i] == "-":
+            flag = 1
+            new_text.append(text[i + 1].upper())
+        elif not flag:
+            new_text.append(text[i])
+        else:
+            flag = 0
+    return ''.join(new_text)
+    
+```
+
+
+---
+
+## Courses:
+
+* **"Поколение Python": курс для начинающих** on the [stepik](https://stepik.org/course/58852/syllabus)
+![photo](https://stepik.org/certificate/8e0a1ed05e78d69b82ec59b536a8438fdc374d25.png?resolution=low)
+* **Selenium WebDriver: полное руководство** on the [coursehunter](https://coursehunter.net/course/st-selenium-webdriver)
+* **Разработка Telegram бота на Python, фреймворк aiogram** on the [youtube](https://www.youtube.com/playlist?list=PLNi5HdK6QEmX1OpHj0wvf8Z28NYoV5sBJ)
+
+---
+
+## Languages:
+1. Russian - Native
+2. Uzbek - Basic
+3. Englich - Beginner(А1)
